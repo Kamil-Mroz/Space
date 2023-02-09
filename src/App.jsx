@@ -18,6 +18,18 @@ const route = createBrowserRouter(
         index
         element={<Home />}
       />
+      <Route
+        path="destination"
+        element={<Home />}
+      />
+      <Route
+        path="crew"
+        element={<Home />}
+      />
+      <Route
+        path="technology"
+        element={<Home />}
+      />
     </Route>
   )
 )

@@ -28,7 +28,11 @@ module.exports = {
       sans: ['Barlow Condensed', 'sans-serif'],
       serif: ['Bellefair', 'serif'],
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        main: '10rem 1fr',
+      },
+    },
   },
   plugins: [],
 }

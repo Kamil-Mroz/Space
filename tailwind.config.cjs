@@ -12,6 +12,12 @@ module.exports = {
       '3xl': '6.25rem',
       '4xl': '9.375rem',
     },
+    letterSpacing: {
+      normal: '0',
+      wider: '.146875em',
+      wide: '.16875em',
+      widest: '.30em',
+    },
     colors: {
       transparent: 'transparent',
       light: '#ffffff',

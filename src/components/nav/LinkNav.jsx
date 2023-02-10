@@ -9,14 +9,14 @@ const LinkNav = ({ page, id }) => {
       <NavLink
         to={pageHref}
         className={({ isActive }) =>
-          ` uppercase tracking-wide flex gap-4 py-9 before:h-1 before:w-full  before:absolute before:bottom-0 before:transition-colors ${
+          ` uppercase tracking-wide flex gap-4 sm:py-9 before:h-1 before:w-full  before:absolute before:bottom-0 before:transition-colors ${
             isActive
-              ? 'before:bg-light '
-              : 'before:bg-transparent hover:before:bg-light/50 '
+              ? 'sm:before:bg-light '
+              : 'sm:before:bg-transparent hover:before:bg-light/50 '
           }`
         }
       >
-        <span className="font-bold invisible hidden xl:block xl:visible">
+        <span className="font-bold sm:invisible sm:hidden xl:block xl:visible">
           {idx}
         </span>{' '}
         {page}

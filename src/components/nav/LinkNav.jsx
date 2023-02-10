@@ -16,7 +16,10 @@ const LinkNav = ({ page, id }) => {
           }`
         }
       >
-        <span className="font-bold">{idx}</span> {page}
+        <span className="font-bold invisible hidden xl:block xl:visible">
+          {idx}
+        </span>{' '}
+        {page}
       </NavLink>
     </li>
   )

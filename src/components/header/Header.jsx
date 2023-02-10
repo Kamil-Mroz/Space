@@ -4,7 +4,7 @@ import Logo from '../../assets/shared/logo.svg'
 import { Link } from 'react-router-dom'
 const Header = () => {
   return (
-    <header className="grid grid-cols-main fixed top-10 w-full">
+    <header className="grid grid-cols-main fixed xl:top-10 w-full">
       <Link
         to="/"
         className="flex justify-center items-center"
@@ -15,7 +15,9 @@ const Header = () => {
           className="block"
         />
       </Link>
-      <Nav />
+      <div className="overflow-hidden">
+        <Nav />
+      </div>
     </header>
   )
 }

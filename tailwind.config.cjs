@@ -16,7 +16,7 @@ module.exports = {
       normal: '0',
       wider: '.146875em',
       wide: '.16875em',
-      widest: '.30em',
+      widest: '.28em',
     },
     colors: {
       transparent: 'transparent',
@@ -30,7 +30,15 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        main: '10rem 1fr',
+        nav: '10rem 1fr',
+        tabletMain: '10rem 1fr',
+        tabletMain: '10rem 1fr',
+      },
+      transitionProperty: {
+        width: 'width,height',
+      },
+      screens: {
+        tablet: '720px',
       },
     },
   },

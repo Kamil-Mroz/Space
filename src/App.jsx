@@ -7,6 +7,8 @@ import {
 import './App.css'
 import RootLayout from './Layout/RootLayout'
 import Home from './Pages/home/Home'
+import { DataProvider } from './context/DataContext'
+import Destination from './Pages/destinations/Destination'
 
 const route = createBrowserRouter(
   createRoutesFromElements(
@@ -19,15 +21,15 @@ const route = createBrowserRouter(
         element={<Home />}
       />
       <Route
-        path="destination"
+        path="destination/:id"
+        element={<Destination />}
+      />
+      <Route
+        path="crew/:id"
         element={<Home />}
       />
       <Route
-        path="crew"
-        element={<Home />}
-      />
-      <Route
-        path="technology"
+        path="technology/:id"
         element={<Home />}
       />
     </Route>
@@ -35,7 +37,11 @@ const route = createBrowserRouter(
 )
 
 function App() {
-  return <RouterProvider router={route} />
+  return (
+    <DataProvider>
+      <RouterProvider router={route} />
+    </DataProvider>
+  )
 }
 
 export default App

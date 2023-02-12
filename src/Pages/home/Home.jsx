@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import HomeDesktop from '../../assets/home/background-home-desktop.jpg'
 import HomeTablet from '../../assets/home/background-home-tablet.jpg'
 import HomeMobile from '../../assets/home/background-home-mobile.jpg'
+import Paragraph from '../../components/paragraph'
 const Home = () => {
   return (
     <>
@@ -26,17 +27,18 @@ const Home = () => {
           <h1 className="xl:text-5xl  md:text-4xl text-[5rem] text-light uppercase font-serif">
             Space
           </h1>
-          <p className="lg:text-base md:text-sm text-xs">
+
+          <Paragraph>
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
             world experience!
-          </p>
+          </Paragraph>
         </div>
         <div className="coll lg:justify-self-end justify-self-center z-10">
           <Link
             to="/destination"
-            className="flex justify-center items-center  before:duration-200 before:ease-in-out before:transition-all md:text-xl text-[1.25rem] tracking-[2px] rounded-full uppercase relative aspect-square xl:w-[17.125rem]  md:w-[15.125rem] w-[9.375rem] text-dark bg-light xl:hover:before:w-[28.125rem] xl:hover:before:h-[28.125rem] lg:before:w-0 lg:before:h-0 lg:before:rounded-full before:absolute lg:before:bg-light/10 lg:before:top-1/2 lg:before:left-1/2 lg:before:-translate-x-1/2 lg:before:-translate-y-1/2 lg:hover:before:w-[22rem] lg:hover:before:h-[22rem]  font-sans"
+            className="font-serif flex justify-center items-center  before:duration-200 before:ease-in-out before:transition-all md:text-xl text-[1.25rem] tracking-[2px] rounded-full uppercase relative aspect-square xl:w-[17.125rem]  md:w-[15.125rem] w-[9.375rem] text-dark bg-light xl:hover:before:w-[28.125rem] xl:hover:before:h-[28.125rem] lg:before:w-0 lg:before:h-0 lg:before:rounded-full before:absolute lg:before:bg-light/10 lg:before:top-1/2 lg:before:left-1/2 lg:before:-translate-x-1/2 lg:before:-translate-y-1/2 lg:hover:before:w-[22rem] lg:hover:before:h-[22rem] "
           >
             Explore
           </Link>

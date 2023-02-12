@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className={`text-light w-2/3 h-screen sm:h-auto fixed backdrop-blur-sm ${
+        className={`text-light w-2/3 h-screen sm:h-auto fixed md:backdrop-blur-sm backdrop-blur-xl ${
           navOpen
             ? 'visible   opacity-100 translate-x-6'
             : 'invisible opacity-0 translate-x-full'

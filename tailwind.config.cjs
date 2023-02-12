@@ -10,7 +10,8 @@ module.exports = {
       xl: '2rem',
       '2xl': '3.5rem',
       '3xl': '6.25rem',
-      '4xl': '9.375rem',
+      '4xl': '8.1rem',
+      '5xl': '9.375rem',
     },
     letterSpacing: {
       normal: '0',
@@ -36,9 +37,6 @@ module.exports = {
       },
       transitionProperty: {
         width: 'width,height',
-      },
-      screens: {
-        tablet: '720px',
       },
     },
   },

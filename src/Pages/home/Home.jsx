@@ -6,34 +6,37 @@ import HomeMobile from '../../assets/home/background-home-mobile.jpg'
 const Home = () => {
   return (
     <>
-      <picture className="absolute tablet:top-0 tablet:right-0 z-0 tablet:rotate-0 rotate-90 object-fill ">
+      <picture className="absolute  inset-0 z-0 object-cover">
         <img
-          src={HomeDesktop}
-          srcSet={`${HomeDesktop} 1440w,
-        ${HomeTablet} 720w,
-        ${HomeMobile} 375w`}
-          sizes=" (min-width:720px) 1440px,(min-width:376px) 720px, 375px "
+          src={HomeMobile}
+          srcSet={`
+            ${HomeDesktop} 375w,
+            ${HomeTablet} 768w,
+            ${HomeDesktop} 1440w
+        `}
           alt=""
-          className="block"
+          className="w-full h-full "
         />
       </picture>
-      <section className=" lg:pt-52 grid grid-cols-2 px-[10.25rem] pb-32 min-h-full max-h-screen items-end ">
-        <div className="coll flex lg:flex-col lg:w-min z-10">
-          <h5 className="lg:text-md tracking-widest uppercase font-sans">
+      <section className=" lg:pt-52 md:pt-48 lg:gap-0 md:gap-40  grid lg:grid-cols-2 md:grid-cols-1 px-[10.25rem] lg:pb-32 md:pb-20 min-h-full max-h-screen items-end ">
+        <div className="coll flex md:flex-col lg:w-min lg:text-left text-center  z-10">
+          <h5 className="xl:text-md lg:text-base md:text-[1.25rem] tracking-widest uppercase font-sans">
             So, you want to travel to
           </h5>
-          <h1 className="lg:text-4xl text-light uppercase font-serif">Space</h1>
-          <p>
+          <h1 className="xl:text-5xl  md:text-4xl text-light uppercase font-serif">
+            Space
+          </h1>
+          <p className="lg:text-base md:text-sm">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
             world experience!
           </p>
         </div>
-        <div className="coll justify-self-end z-10">
+        <div className="coll lg:justify-self-end justify-self-center z-10">
           <Link
             to="/destination"
-            className="grid place-items-center  before:duration-200 before:ease-in-out before:transition-all lg:text-xl tracking-[2px] rounded-full uppercase relative aspect-square lg:w-[17.125rem] text-dark bg-light lg:hover:before:w-[28.125rem] lg:hover:before:h-[28.125rem] lg:before:w-0 lg:before:h-0 lg:before:rounded-full lg:before:absolute lg:before:bg-light/10 lg:before:top-1/2 lg:before:left-1/2 lg:before:-translate-x-1/2 lg:before:-translate-y-1/2  font-sans "
+            className="flex justify-center items-center  before:duration-200 before:ease-in-out before:transition-all md:text-xl tracking-[2px] rounded-full uppercase relative aspect-square xl:w-[17.125rem]  md:w-[15.125rem] text-dark bg-light xl:hover:before:w-[28.125rem] xl:hover:before:h-[28.125rem] lg:before:w-0 lg:before:h-0 lg:before:rounded-full lg:before:absolute lg:before:bg-light/10 lg:before:top-1/2 lg:before:left-1/2 lg:before:-translate-x-1/2 lg:before:-translate-y-1/2 lg:hover:before:w-[22rem] lg:hover:before:h-[22rem] font-sans"
           >
             Explore
           </Link>

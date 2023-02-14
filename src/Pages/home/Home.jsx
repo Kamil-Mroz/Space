@@ -4,21 +4,18 @@ import HomeDesktop from '../../assets/home/background-home-desktop.jpg'
 import HomeTablet from '../../assets/home/background-home-tablet.jpg'
 import HomeMobile from '../../assets/home/background-home-mobile.jpg'
 import Paragraph from '../../components/Paragraph'
+import BackgroundImg from '../../components/BackgroundImg'
 const Home = () => {
   return (
     <>
-      <picture className="absolute  inset-0 z-0 object-cover">
-        <img
-          src={HomeMobile}
-          srcSet={`
-            ${HomeDesktop} 375w,
-            ${HomeTablet} 768w,
-            ${HomeDesktop} 1440w
-        `}
-          alt=""
-          className="w-full h-full "
-        />
-      </picture>
+      <BackgroundImg
+        images={{
+          lg: HomeDesktop,
+          md: HomeTablet,
+          sm: HomeMobile,
+          alt: 'Earth from space',
+        }}
+      />
       <section className=" lg:pt-52 md:pt-48 lg:gap-0 md:gap-40  grid lg:grid-cols-2 grid-cols-1 sm:px-[10.25rem] px-6 lg:pb-32 md:pb-20 pb-12  min-h-full md:max-h-screen items-end ">
         <div className="coll flex flex-col lg:w-min lg:text-left text-center  z-10">
           <h5 className="xl:text-md md:text-[1.25rem] text-sm xl:tracking-widest md:tracking-wide tracking-wider uppercase font-sans">

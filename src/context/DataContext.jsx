@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react'
+import React, { createContext } from 'react'
 import Data from '../data/data.json'
 
 const DataContext = createContext(Data)

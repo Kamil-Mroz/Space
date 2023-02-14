@@ -5,10 +5,11 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import './App.css'
-import RootLayout from './Layout/RootLayout'
 import Home from './Pages/home/Home'
 import { DataProvider } from './context/DataContext'
 import Destination from './Pages/destinations/Destination'
+import DestinationRoot from './Pages/destinations/DestinationRoot'
+import RootLayout from './layout/RootLayout'
 
 const route = createBrowserRouter(
   createRoutesFromElements(
@@ -21,9 +22,15 @@ const route = createBrowserRouter(
         element={<Home />}
       />
       <Route
-        path="destination/:id"
-        element={<Destination />}
-      />
+        path="destination"
+        element={<DestinationRoot />}
+      >
+        <Route
+          path=":id"
+          element={<Destination />}
+        />
+      </Route>
+
       <Route
         path="crew/:id"
         element={<Home />}

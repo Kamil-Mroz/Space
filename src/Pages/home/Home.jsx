@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import HomeDesktop from '../../assets/home/background-home-desktop.jpg'
 import HomeTablet from '../../assets/home/background-home-tablet.jpg'
 import HomeMobile from '../../assets/home/background-home-mobile.jpg'
-import Paragraph from '../../components/paragraph'
+import Paragraph from '../../components/Paragraph'
 const Home = () => {
   return (
     <>

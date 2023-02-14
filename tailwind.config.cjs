@@ -33,7 +33,6 @@ module.exports = {
       gridTemplateColumns: {
         nav: '10rem 1fr',
         tabletMain: '10rem 1fr',
-        tabletMain: '10rem 1fr',
       },
       transitionProperty: {
         width: 'width,height',

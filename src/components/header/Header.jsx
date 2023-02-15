@@ -5,7 +5,7 @@ import Logo from '../../assets/shared/logo.svg'
 import { Link } from 'react-router-dom'
 const Header = () => {
   return (
-    <header className="grid grid-cols-nav fixed xl:top-10 w-full px-6 sm:px-0 z-20">
+    <header className="grid grid-cols-nav fixed xl:top-10 w-full  px-6 md:px-0 z-20">
       <Link
         to="/"
         className="flex sm:justify-center items-center "

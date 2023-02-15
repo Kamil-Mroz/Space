@@ -2,7 +2,7 @@ import React from 'react'
 import DestinationLinks from './DestinationLinks'
 const DestinationNav = ({ planets }) => {
   return (
-    <aside className="flex items-center lg:gap-8 font-sans text-sm">
+    <aside className="flex items-center lg:gap-8 sm:gap-6 font-sans text-sm lg:justify-start justify-center">
       {planets.map((planet) => (
         <DestinationLinks
           planet={planet}

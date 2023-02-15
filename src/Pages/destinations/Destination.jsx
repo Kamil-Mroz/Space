@@ -28,11 +28,11 @@ const Destination = () => {
           alt: 'void',
         }}
       />
-      <div className="grid lg:grid-cols-tabletMain grid-cols-1  place-content-start lg:gap-y-16 sm:gap-14 sm:pt-14 xl:pr-40 lg:pl-0 md:px-10 z-10">
+      <div className="grid lg:grid-cols-tabletMain grid-cols-1  place-content-start lg:gap-y-16 sm:gap-14 gap-8 sm:pt-14 xl:pr-40 lg:pl-0 sm:px-10 px-6 z-10 ">
         <SubHeading id={1}>Pick your destination</SubHeading>
 
-        <div className="grid lg:grid-cols-2  grid-cols-1 lg:col-start-2  lg:gap-3 sm:gap-14 items-center lg:px-0 sm:px-14 justify-items-center lg:text-left text-center">
-          <picture className="w-[18.75rem]">
+        <div className="grid lg:grid-cols-2  grid-cols-1 lg:col-start-2  lg:gap-3 sm:gap-14 items-center lg:px-0 md:px-14 justify-items-center lg:text-left text-center gap-7">
+          <picture className="lg:w-full md:w-[18.75rem] w-[12rem]">
             <source
               type="image/webp"
               srcSet={webp}
@@ -44,11 +44,11 @@ const Destination = () => {
           </picture>
           <div className="flex flex-col xl:gap-7 ">
             <DestinationNav planets={destinations} />
-            <h2 className=" sm:text-[5rem] xl:text-3xl  md:text-[5rem]  text-light font-serif uppercase tracking-[0.5rem]">
+            <h2 className=" sm:text-[5rem] xl:text-3xl  md:text-[5rem]  text-light font-serif uppercase tracking-[0.5rem] text-2xl">
               {data.name}
             </h2>
             <Paragraph>{data.description}</Paragraph>
-            <div className="border-t-[1px] border-light/5  uppercase grid grid-cols-2 justify-between xl:pt-7 md:pt-3 mt-4">
+            <div className="border-t-[1px] border-light/5  uppercase grid md:grid-cols-2 sm:justify-between gap-5 xl:pt-7 md:pt-3 mt-4 pt-4 grid-cols-1">
               <div className="flex flex-col  xl:gap-3 md:gap-0  ">
                 <p className="font-sans text-xs tracking-wide">avg. distance</p>
                 <p className="font-serif text-light text-md">{data.distance}</p>

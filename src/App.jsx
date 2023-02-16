@@ -10,7 +10,8 @@ import { DataProvider } from './context/DataContext'
 import Destination from './Pages/destinations/Destination'
 import DestinationRoot from './Pages/destinations/DestinationRoot'
 import RootLayout from './layout/RootLayout'
-
+import Crew from './Pages/crew/Crew'
+import CrewRoot from './Pages/crew/CrewRoot'
 const route = createBrowserRouter(
   createRoutesFromElements(
     <Route
@@ -32,9 +33,14 @@ const route = createBrowserRouter(
       </Route>
 
       <Route
-        path="crew/:id"
-        element={<Home />}
-      />
+        path="crew"
+        element={<CrewRoot />}
+      >
+        <Route
+          path=":id"
+          element={<Crew />}
+        />
+      </Route>
       <Route
         path="technology/:id"
         element={<Home />}

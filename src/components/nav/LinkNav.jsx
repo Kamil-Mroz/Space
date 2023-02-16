@@ -12,7 +12,7 @@ const LinkNav = ({ page, id }) => {
           ` uppercase tracking-wide flex gap-4 md:py-9 sm:py-4 before:h-1 before:w-full  before:absolute before:bottom-0 before:transition-colors ${
             isActive
               ? 'md:before:bg-light '
-              : 'md:before:bg-transparent hover:before:bg-light/50 '
+              : 'md:before:bg-transparent md:hover:before:bg-light/50 '
           }`
         }
       >

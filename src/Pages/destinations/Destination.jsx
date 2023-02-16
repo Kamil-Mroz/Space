@@ -12,8 +12,8 @@ const Destination = () => {
   const { id: planetId } = useParams()
   const { destinations } = useContext(DataContext)
 
-  const data = destinations.find((planet) =>
-    planet.name.toLowerCase() === planetId ? planet : ''
+  const data = destinations.find(
+    (planet) => planet.name.toLowerCase() === planetId
   )
   const [jpg, webp] = Object.values(data.images).map(
     (img) => new URL(img, import.meta.url).href

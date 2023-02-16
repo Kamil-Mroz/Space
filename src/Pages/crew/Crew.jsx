@@ -28,25 +28,25 @@ const Crew = () => {
           alt: 'ice planet',
         }}
       />
-      <div className="grid grid-cols-1 px-6 gap-y-8 z-10">
+      <div className="grid  grid-cols-1 px-6 sm:gap-y-12 gap-y-8 z-10">
         <SubHeading id={2}>Meet your crew</SubHeading>
-        <div className="grid grid-cols-1 gap-y-8 ">
-          <picture className="border-b  border-b-light/5">
+        <div className="grid grid-cols-1 gap-y-8 sm:px-16">
+          <picture className="border-b sm:order-2 border-b-light/5">
             <source srcSet={webp} />
             <img
               src={png}
               alt={data.name}
-              className="h-56 w-auto mx-auto"
+              className="sm:h-[33.25rem] h-56 w-auto mx-auto"
             />
           </picture>
-          <article className="text-center">
+          <article className="text-center grid order-1">
             <CrewNav crew={crew} />
-            <div>
-              <div className="pb-4">
-                <h4 className="text-light/50 text-sm uppercase font-serif tracking-[1px]">
+            <div className="order-1">
+              <div className="sm:pb-0 pb-4">
+                <h4 className="text-light/50 md:text-[1.5rem] text-sm uppercase font-serif tracking-[1px]">
                   {data.role}
                 </h4>
-                <h3 className="text-light text-[1.5rem] uppercase font-serif tracking-[1px]">
+                <h3 className="text-light md:text-[2.5rem] text-[1.5rem] uppercase font-serif tracking-[1px]">
                   {data.name}
                 </h3>
               </div>

@@ -15,7 +15,7 @@ const Nav = () => {
         } transition-all md:transition-none md:opacity-100 font-sans text-sm sm:text-xs  md:text-sm md:visible  md:flex md:relative lg:pl-32 md:px-12 sm:px-10 lg:pr-40 md:w-max items-center bg-light/5 justify-self-end before:h-px before:w-full before:absolute xl:before:bg-light/50 before:top-1/2 before:-left-full before:translate-x-8 before:-translate-y-1/2 z-0  md:translate-x-0`}
       >
         <ul className="flex flex-col md:flex-row lg:gap-12 md:gap-9 sm:gap-5 gap-8 pl-8 md:pl-0 mt-32 md:mt-0">
-          <Links />
+          <Links setNavOpen={setNavOpen} />
         </ul>
       </nav>
       <div

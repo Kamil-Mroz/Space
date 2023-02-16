@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const LinkNav = ({ page, id }) => {
+const LinkNav = ({ page, id, setNavOpen }) => {
   const idx = `${id}`.padStart(2, 0)
   const pageHref = id === 0 ? '/' : `/${page}`
   return (
@@ -15,6 +15,7 @@ const LinkNav = ({ page, id }) => {
               : 'md:before:bg-transparent md:hover:before:bg-light/50 '
           }`
         }
+        onClick={() => setNavOpen(false)}
       >
         <span className="font-bold md:invisible md:hidden xl:block xl:visible">
           {idx}

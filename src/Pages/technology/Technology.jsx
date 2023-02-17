@@ -28,9 +28,10 @@ const technology = () => {
         }}
       />
       <div className="z-10 grid grid-cols-1 gap-y-8 sm:gap-y-16">
-        <div className="self-start">
+        <div className="sm:px-10">
           <Subheading id={3}>Space Launch 101</Subheading>
         </div>
+
         <article className=" grid grid-cols-1 gap-y-8 sm:gap-y-14">
           <picture className="w-full">
             <source
@@ -47,8 +48,10 @@ const technology = () => {
           <div className="px-8 sm:px-36">
             <TechnologyNav technology={technology} />
             <div className="text-center">
-              <p className="font-sans text-xs uppercase">The Terminology...</p>
-              <h3 className="font-serif text-[1.5rem] uppercase tracking-[1px] text-light md:text-[2.5rem] xl:text-[3.125rem] ">
+              <p className="font-sans text-xs uppercase tracking-wider sm:text-sm">
+                The Terminology...
+              </p>
+              <h3 className="font-serif text-[1.5rem] uppercase tracking-[1px] text-light sm:text-[2.5rem] xl:text-[3.125rem] ">
                 {data.name}
               </h3>
               <Paragraph>{data.description}</Paragraph>

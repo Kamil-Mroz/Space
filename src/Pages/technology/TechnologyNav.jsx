@@ -3,7 +3,7 @@ import TechnologyLink from './TechnologyLink'
 
 const TechnologyNav = ({ technology }) => {
   return (
-    <aside className="mb-6 flex justify-center gap-4 sm:mb-11 lg:flex-col lg:gap-8">
+    <aside className="mb-6 flex justify-center gap-4 sm:mb-11 lg:mb-0 lg:flex-col lg:gap-8 lg:justify-self-start">
       {technology.map((tech, id) => (
         <TechnologyLink
           tech={tech}

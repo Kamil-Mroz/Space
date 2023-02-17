@@ -27,15 +27,15 @@ const technology = () => {
           alt: 'void',
         }}
       />
-      <div className="z-10 grid grid-cols-1 gap-y-8 sm:gap-y-16">
-        <div className="sm:px-10">
+      <div className="z-10 grid grid-cols-1 gap-y-8 sm:gap-y-16 lg:grid-cols-tabletMain">
+        <div className="sm:px-10 lg:col-start-2 lg:px-0">
           <Subheading id={3}>Space Launch 101</Subheading>
         </div>
 
-        <article className=" grid grid-cols-1 gap-y-8 sm:gap-y-14">
-          <picture className="w-full">
+        <article className=" grid grid-cols-1 gap-y-8 sm:gap-y-14 md:grid-cols-2 md:gap-x-5 lg:col-start-2">
+          <picture className="w-full md:order-2  lg:justify-self-end xl:w-9/12 2xl:w-8/12">
             <source
-              media="(min-width:1024px)"
+              media="(min-width:768px)"
               srcSet={desktop}
             />
             <source srcSet={mobile} />
@@ -45,13 +45,13 @@ const technology = () => {
               className="h-full w-full"
             />
           </picture>
-          <div className="px-8 sm:px-36">
+          <div className="grid gap-4 px-8 sm:px-36 md:self-center md:px-3  lg:grid-cols-[min-content,1fr]  lg:px-0 xl:gap-20">
             <TechnologyNav technology={technology} />
-            <div className="text-center">
+            <div className="text-center lg:self-center  lg:text-left">
               <p className="font-sans text-xs uppercase tracking-wider sm:text-sm">
                 The Terminology...
               </p>
-              <h3 className="font-serif text-[1.5rem] uppercase tracking-[1px] text-light sm:text-[2.5rem] xl:text-[3.125rem] ">
+              <h3 className="font-serif text-[1.5rem] uppercase tracking-[1px] text-light lg:text-[2.5rem] xl:text-[3.125rem] ">
                 {data.name}
               </h3>
               <Paragraph>{data.description}</Paragraph>

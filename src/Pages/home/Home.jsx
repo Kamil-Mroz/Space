@@ -16,12 +16,12 @@ const Home = () => {
           alt: 'Earth from space',
         }}
       />
-      <section className=" lg:pt-52 md:pt-48 lg:gap-0 md:gap-40  grid lg:grid-cols-2 grid-cols-1 sm:px-[10.25rem] px-6 lg:pb-32 md:pb-20 pb-12  min-h-full md:max-h-screen items-end ">
-        <div className="coll flex flex-col lg:w-min lg:text-left text-center  z-10">
-          <h5 className="xl:text-md md:text-[1.25rem] text-sm xl:tracking-widest md:tracking-wide tracking-wider uppercase font-sans">
+      <section className=" grid min-h-full grid-cols-1 items-end  px-6 pb-12 sm:px-[10.25rem] md:max-h-screen md:gap-40 md:pt-48 md:pb-20 lg:grid-cols-2  lg:gap-0 lg:pt-52 lg:pb-32 ">
+        <div className="coll z-10 flex flex-col text-center lg:w-min  lg:text-left">
+          <h5 className="font-sans text-sm uppercase tracking-wider md:text-[1.25rem] md:tracking-wide xl:text-md xl:tracking-widest">
             So, you want to travel to
           </h5>
-          <h1 className="xl:text-5xl  md:text-4xl text-[5rem] text-light uppercase font-serif">
+          <h1 className="font-serif  text-[5rem] uppercase text-light md:text-4xl xl:text-5xl">
             Space
           </h1>
 
@@ -32,10 +32,10 @@ const Home = () => {
             world experience!
           </Paragraph>
         </div>
-        <div className="coll lg:justify-self-end justify-self-center z-10">
+        <div className="coll z-10 justify-self-center lg:justify-self-end">
           <Link
             to="/destination"
-            className="font-serif flex justify-center items-center  before:duration-200 before:ease-in-out before:transition-all md:text-xl text-[1.25rem] tracking-[2px] rounded-full uppercase relative aspect-square xl:w-[17.125rem]  md:w-[15.125rem] w-[9.375rem] text-dark bg-light xl:hover:before:w-[28.125rem] xl:hover:before:h-[28.125rem] lg:before:w-0 lg:before:h-0 lg:before:rounded-full before:absolute lg:before:bg-light/10 lg:before:top-1/2 lg:before:left-1/2 lg:before:-translate-x-1/2 lg:before:-translate-y-1/2 lg:hover:before:w-[22rem] lg:hover:before:h-[22rem] "
+            className="relative flex aspect-square w-[9.375rem]  items-center justify-center rounded-full bg-light font-serif text-[1.25rem] uppercase tracking-[2px] text-dark before:absolute before:transition-all  before:duration-200 before:ease-in-out md:w-[15.125rem] md:text-xl lg:before:top-1/2 lg:before:left-1/2 lg:before:h-0 lg:before:w-0 lg:before:-translate-x-1/2 lg:before:-translate-y-1/2 lg:before:rounded-full lg:before:bg-light/10 lg:hover:before:h-[22rem] lg:hover:before:w-[22rem] xl:w-[17.125rem] xl:hover:before:h-[28.125rem] xl:hover:before:w-[28.125rem] "
           >
             Explore
           </Link>

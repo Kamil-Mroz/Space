@@ -15,7 +15,7 @@ const BackgroundImg = ({ images }) => {
       <img
         src={images.lg}
         alt={images.alt}
-        className="w-full h-full"
+        className="h-full w-full"
       />
     </picture>
   )

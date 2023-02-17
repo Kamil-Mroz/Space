@@ -7,7 +7,7 @@ const CrewLink = ({ member, id }) => {
       className={({ isActive }) =>
         `${
           isActive ? 'bg-light' : 'bg-light/20 hover:bg-light/60'
-        } lg:w-4 lg:h-4  w-[0.625rem] h-[0.625rem] rounded-full block`
+        } block h-[0.625rem]  w-[0.625rem] rounded-full lg:h-4 lg:w-4`
       }
       title={member.name}
     />

@@ -6,7 +6,7 @@ const NavIcon = ({ url, name }) => {
       <img
         src={url}
         alt={name}
-        className="w-6 h-6"
+        className="h-6 w-6"
       />
     </button>
   )

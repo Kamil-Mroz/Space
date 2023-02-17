@@ -6,9 +6,9 @@ const DestinationLinks = ({ planet }) => {
     <NavLink
       to={`/destination/${planet.name.toLowerCase()}`}
       className={({ isActive }) =>
-        `uppercase font-normal sm:tracking-wide tracking-wider sm:py-4 py-2 before:h-1 before:w-full  before:absolute before:bottom-0 before:transition-colors relative ${
+        `relative py-2 font-normal uppercase tracking-wider before:absolute before:bottom-0 before:h-1  before:w-full before:transition-colors sm:py-4 sm:tracking-wide ${
           isActive
-            ? 'before:bg-light text-light'
+            ? 'text-light before:bg-light'
             : 'before:bg-transparent hover:before:bg-light/50 '
         }`
       }

@@ -5,10 +5,10 @@ import Logo from '../../assets/shared/logo.svg'
 import { Link } from 'react-router-dom'
 const Header = () => {
   return (
-    <header className="grid grid-cols-nav fixed xl:top-10 w-full  px-6 md:px-0 z-20">
+    <header className="fixed z-20 grid w-full grid-cols-nav  px-6 md:px-0 xl:top-10">
       <Link
         to="/"
-        className="flex sm:justify-center items-center "
+        className="flex items-center sm:justify-center "
       >
         <img
           src={Logo}
@@ -16,7 +16,7 @@ const Header = () => {
           className="block py-6"
         />
       </Link>
-      <div className="overflow-hidden flex justify-end">
+      <div className="flex justify-end overflow-hidden">
         <Nav />
       </div>
     </header>

@@ -12,6 +12,8 @@ import DestinationRoot from './Pages/destinations/DestinationRoot'
 import RootLayout from './layout/RootLayout'
 import Crew from './Pages/crew/Crew'
 import CrewRoot from './Pages/crew/CrewRoot'
+import TechnologyRoot from './Pages/technology/TechnologyRoot'
+import Technology from './Pages/technology/Technology'
 const route = createBrowserRouter(
   createRoutesFromElements(
     <Route
@@ -42,9 +44,14 @@ const route = createBrowserRouter(
         />
       </Route>
       <Route
-        path="technology/:id"
-        element={<Home />}
-      />
+        path="technology"
+        element={<TechnologyRoot />}
+      >
+        <Route
+          path=":id"
+          element={<Technology />}
+        />
+      </Route>
     </Route>
   )
 )

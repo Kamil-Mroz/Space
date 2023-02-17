@@ -3,7 +3,7 @@ import CrewLink from './CrewLink'
 
 const CrewNav = ({ crew }) => {
   return (
-    <aside className=" xl:pt-28 sm:py-10 py-8 flex lg:justify-start justify-center  lg:gap-6 gap-4 order-2">
+    <aside className=" order-2 flex justify-center gap-4 py-8 sm:py-10  lg:justify-start lg:gap-6 xl:pt-28">
       {crew.map((member, id) => (
         <CrewLink
           key={member.name}

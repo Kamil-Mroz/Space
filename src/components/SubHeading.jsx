@@ -2,7 +2,7 @@ import React from 'react'
 
 const SubHeading = ({ id, children }) => {
   return (
-    <p className="text-light font-sans flex gap-5 lg:tracking-widest lg:text-md sm:tracking-wide sm:text-[1.25rem] text-sm tracking-wider uppercase lg:col-start-2 sm:justify-start justify-center">
+    <p className="flex justify-center gap-5 font-sans text-sm uppercase tracking-wider text-light sm:justify-start sm:text-[1.25rem] sm:tracking-wide lg:col-start-2 lg:text-md lg:tracking-widest">
       <span className="font-bold text-light/25">
         {`${id}`.padStart(2, '0')}
       </span>

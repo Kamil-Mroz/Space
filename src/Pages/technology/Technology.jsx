@@ -14,9 +14,7 @@ const technology = () => {
   const { technology } = useContext(DataContext)
   const data = technology.find((_, id) => id + 1 === Number(technologyId))
   const [desktop, mobile] = Object.values(data.images).map(
-    (img) =>
-      new URL(img, 'https://github.com/Kamil-Mroz/Space/blob/main/src/assets/')
-        .href
+    (img) => new URL(img, import.meta.url).href
   )
 
   return (

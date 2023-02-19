@@ -16,9 +16,7 @@ const Destination = () => {
     (planet) => planet.name.toLowerCase() === planetId
   )
   const [jpg, webp] = Object.values(data.images).map(
-    (img) =>
-      new URL(img, 'https://github.com/Kamil-Mroz/Space/blob/main/src/assets/')
-        .href
+    (img) => new URL(img, import.meta.url).href
   )
   return (
     <>

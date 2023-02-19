@@ -15,9 +15,11 @@ const Crew = () => {
 
   const data = crew.find((member, id) => id + 1 === Number(crewMember))
   const [png, webp] = Object.values(data.images).map(
-    (img) => new URL(img, import.meta.url).href
+    (img) =>
+      new URL(img, 'https://github.com/Kamil-Mroz/Space/blob/main/src/assets/')
+        .href
   )
-
+  console.log(png)
   return (
     <>
       <BackgroundImg
